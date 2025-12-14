@@ -1,0 +1,39 @@
+alias: LLM Vision - Frigate Events to Timeline
+description: ""
+triggers:
+  - trigger: mqtt
+    topic: frigate/events
+conditions: []
+actions:
+  - action: llmvision.video_analyzer
+    data:
+      max_frames: 2
+      remember: true
+      include_filename: true
+      target_width: 1280
+      max_tokens: 3000
+      generate_title: false
+      expose_images: true
+      provider: 01KBWSV4NK8J71DXSM6HBWSZ91  # select from the UI
+      model: Gemma3:12b                     # recommended minimum
+      message: >-
+        Summarize the events based on a series of images captured at short
+        intervals. Focus only on moving subjects such as people, vehicles, and
+        other active elements. Ignore static objects and scenery. Provide a
+        clear and concise account of movements and interactions. Do not mention
+        or imply the existence of images—present the information as if directly
+        observing the events. If no movement is detected, respond with: 'No
+        activity observed.' 
+      event_id: "{{ event_id }}"
+    response_variable: llm_result
+  - delay:
+      hours: 0
+      minutes: 10
+      seconds: 0
+      milliseconds: 0
+mode: single
+variables:
+  camera: "{{ trigger.payload_json.after.camera }}"
+  event_id: "{{ trigger.payload_json.after.id }}"
+  event_type: "{{ trigger.payload_json.type }}"
+  label: "{{ trigger.payload_json.after.label }}"

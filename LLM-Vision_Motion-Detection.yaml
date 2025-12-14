@@ -1,0 +1,18 @@
+alias: LLM Vision – Motion Detection
+description: ""
+use_blueprint:
+  path: valentinfrlch/event_summary.yaml
+  input:
+    motion_sensors:
+      - binary_sensor.kitchen_all_occupancy   # change "kitchen" to your camera name
+    camera_entities:
+      - camera.kitchen                        # same camera name as above
+    provider: 01KBWSV4NK8J71DXSM6HBWSZ91      # select from the UI
+    model: gemma3:12b                         # recommended minimum
+    notify_device:
+      - 96af5f9fbbb393125ca4716a991bc483      # select your phone in the UI
+    tap_navigate: /lovelace/llm-vision        # optional dashboard path
+    cooldown:
+      hours: 0
+      minutes: 10
+      seconds: 0

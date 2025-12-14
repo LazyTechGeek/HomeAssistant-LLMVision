@@ -1,0 +1,18 @@
+alias: LLM Vision – Person Detection
+description: ""
+use_blueprint:
+  path: valentinfrlch/event_summary.yaml
+  input:
+    motion_sensors:
+      - binary_sensor.kitchen_person_occupancy  # change "kitchen" to your camera name
+    camera_entities:
+      - camera.kitchen                          # same camera name as above
+    provider: 01KBWSV4NK8J71DXSM6HBWSZ91        # select from the UI
+    model: gemma3:12b                           # recommended minimum
+    notify_device:
+      - YOUR_MOBILE_DEVICE                      # select your phone in the UI
+    tap_navigate: /lovelace/llm-vision          # optional dashboard path
+    cooldown:
+      hours: 0
+      minutes: 10
+      seconds: 0
