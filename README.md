@@ -10,7 +10,7 @@ This is a longer step-by-step guide, so chapters are included to help you jump s
 ## 📖 Written Articles
 - **[Enabling RTSP on Reolink Cameras](https://github.com/LazyTechGeek/HomeAssistant-LLMVision/blob/main/Enabling_RTSP_on_Reolink_Cameras.pdf)**
 
-## ⚙️ Automation files used in this video
+## ⚙️ Automation examples used in this video
 - **[LLM Vision Frigate Events to Timeline](https://github.com/LazyTechGeek/HomeAssistant-LLMVision/blob/main/LLM-Vision_Frigate-Events-to-Timeline.yaml)**
 - **[LLM Vision Frigate Events to Timeline Single Camera](https://github.com/LazyTechGeek/HomeAssistant-LLMVision/blob/main/LLM-Vision_Frigate-Events-to-Timeline_Single-Camera.yaml)**
 - **[LLM Vision Motion Detection](https://github.com/LazyTechGeek/HomeAssistant-LLMVision/blob/main/LLM-Vision_Motion-Detection.yaml)**
