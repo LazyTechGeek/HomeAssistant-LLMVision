@@ -9,6 +9,7 @@ This is a longer step-by-step guide, so chapters are included to help you jump s
 
 ## 📖 Written Articles
 - **[Enabling RTSP on Reolink Cameras](https://github.com/LazyTechGeek/HomeAssistant-LLMVision/blob/main/Enabling_RTSP_on_Reolink_Cameras.pdf)**
+- **OpenAI API Key Setup for Home Assistant (Comming Soon)**
 
 ## ⚙️ Automation examples used in this video
 - **[LLM Vision Frigate Events to Timeline](https://github.com/LazyTechGeek/HomeAssistant-LLMVision/blob/main/LLM-Vision_Frigate-Events-to-Timeline.yaml)**
