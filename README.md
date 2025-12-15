@@ -16,3 +16,6 @@ This is a longer step-by-step guide, so chapters are included to help you jump s
 - **[LLM Vision Frigate Events to Timeline Single Camera](https://github.com/LazyTechGeek/HomeAssistant-LLMVision/blob/main/LLM-Vision_Frigate-Events-to-Timeline_Single-Camera.yaml)**
 - **[LLM Vision Motion Detection](https://github.com/LazyTechGeek/HomeAssistant-LLMVision/blob/main/LLM-Vision_Motion-Detection.yaml)**
 - **[LLM Vision Person Detection](https://github.com/LazyTechGeek/HomeAssistant-LLMVision/blob/main/LLM-Vision_Person-Detection.yaml)**
+
+📱 ⚙️ LLM Vision Timeline Mobile View
+- **[LLM Vision Timeline Mobile View](https://github.com/LazyTechGeek/HomeAssistant-LLMVision/blob/main/LLM-Vision-Timeline_Mobile-View.yaml)**
