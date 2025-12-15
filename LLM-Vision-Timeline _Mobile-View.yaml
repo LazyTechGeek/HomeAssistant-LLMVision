@@ -1,0 +1,35 @@
+type: panel
+path: llm-vision
+title: LLM-Vision
+icon: mdi:cctv
+subview: false
+cards:
+  - type: vertical-stack
+    cards:
+      - type: button
+        name: Home
+        icon: mdi:home
+        tap_action:
+          action: navigate
+          navigation_path: /lovelace/kiosk-section
+# CHANGE THIS to the Lovelace view/path you want the Home button to return to
+# Example: /lovelace/home or /lovelace/0
+        hold_action:
+          action: navigate
+          navigation_path: /lovelace/kiosk-section
+# Same as above – update to your own Lovelace view path
+
+      - type: custom:llmvision-card
+        entity: calendar.llm_vision_timeline
+        number_of_hours: 24
+        number_of_events: 10
+        language: en
+        custom_colors:
+          people:
+            - 251
+            - 255
+            - 0
+          vehicles:
+            - 143
+            - 143
+            - 143
